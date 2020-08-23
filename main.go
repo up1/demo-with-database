@@ -9,8 +9,8 @@ import (
 
 func main() {
 	db := pg.Connect(&pg.Options{
-		User:     "alireza",
-		Password: "alireza",
+		User:     "user",
+		Password: "password",
 	})
 
 	mux := mux.NewRouter()
