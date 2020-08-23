@@ -1,5 +1,7 @@
 package main
 
+const BudgetPath = "/budgets"
+
 func (s *server) routes() {
-	// register handlers here
+	s.mux.HandleFunc(BudgetPath, s.getBudgets).Methods("GET")
 }
